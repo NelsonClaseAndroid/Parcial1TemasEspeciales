@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterDataProduct">
+
+    <EditText
+        android:id="@+id/articuloTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/articulo"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descripcionTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/descripcion"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articuloTxt" />
+
+    <EditText
+        android:id="@+id/precioTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/Precio"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionTxt" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/clean_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/volver"
+        app:layout_constraintStart_toEndOf="@+id/cleanButton"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

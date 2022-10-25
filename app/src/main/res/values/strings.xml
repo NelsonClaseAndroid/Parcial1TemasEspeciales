@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lista Productos</string>
+    <string name="Add">Agregar</string>
+    <string name="articulo">Articulo</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="AgregarProducto">Agregar Producto</string>
+    <string name="Precio">Precio</string>
+    <string name="clean_message">X</string>
+    <string name="Agregar">+</string>
+    <string name="volver">▢</string>
+</resources>
